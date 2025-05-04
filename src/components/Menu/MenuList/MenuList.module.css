@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   gap: var(--gap-xl);
-  font-family: var(--fonte-texto);
+  font-family: var(--font-text);
   font-size: var(--font-size-m);
   font-weight: 400;
 }

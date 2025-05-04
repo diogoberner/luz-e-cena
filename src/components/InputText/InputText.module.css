@@ -3,7 +3,7 @@
   border: none;
   outline: none;
   background-color: transparent;
-  color: var(--preto);
-  font-family: var(--fonte-texto);
+  color: var(--black);
+  font-family: var(--font-text);
   font-size: var(--font-size-m);
 }
