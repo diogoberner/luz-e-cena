@@ -1,0 +1,37 @@
+.tag {
+  padding: var(--padding-xs) var(--padding-s);
+  border-radius: 0.5rem;
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  text-align: center;
+  font-family: var(--font-text);
+  color: var(--black);
+}
+
+.twoD {
+  background-color: var(--gray-light);
+}
+
+.threeD {
+  background-color: var(--gray-medium);
+}
+
+.free {
+  background-color: var(--green);
+}
+
+.ten {
+  background-color: var(--blue);
+}
+
+.twelve {
+  background-color: var(--yellow);
+}
+
+.fourteen {
+  background-color: var(--coral);
+}
+
+.sixteen {
+  background-color: var(--red);
+}
