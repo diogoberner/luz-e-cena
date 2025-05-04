@@ -8,10 +8,10 @@ interface TagProps {
 
 const tagClass = {
   Livre: styles.free,
-  "10 Anos": styles.ten,
-  "12 Anos": styles.twelve,
-  "14 Anos": styles.fourteen,
-  "16 Anos": styles.sixteen,
+  "10 anos": styles.ten,
+  "12 anos": styles.twelve,
+  "14 anos": styles.fourteen,
+  "16 anos": styles.sixteen,
   "2D": styles.twoD,
   "3D": styles.threeD,
 };
