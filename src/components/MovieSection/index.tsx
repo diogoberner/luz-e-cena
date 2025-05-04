@@ -1,0 +1,109 @@
+import { FaSearch } from "react-icons/fa";
+import Button from "../Button";
+import Fieldset from "../Fieldset";
+import InputText from "../InputText";
+import styles from "./MovieSection.module.css";
+import MoviesList from "../MoviesList";
+import { Movie } from "../../types";
+
+const movies: Movie[] = [
+  {
+    id: 1,
+    src: "/capas_de_filmes/amanhecer.png",
+    alt: "Imagem do filme Amanhecer",
+    title: "Amanhecer",
+    category: "2D",
+    rating: "Livre",
+    genre: "Romance",
+    duration: 90,
+  },
+  {
+    id: 2,
+    src: "/capas_de_filmes/amigo_da_sombra.png",
+    alt: "Imagem do filme Amigo da sombra",
+    title: "Amigo da sombra",
+    category: "2D",
+    rating: "12 anos",
+    genre: "Suspense",
+    duration: 110,
+  },
+  {
+    id: 3,
+    src: "/capas_de_filmes/amigos_do_bosque_magico.png",
+    alt: "Imagem do filme Amigo do bosque mágico",
+    title: "Amigo do bosque mágico",
+    category: "2D",
+    rating: "Livre",
+    genre: "Animação",
+    duration: 60,
+  },
+  {
+    id: 4,
+    src: "/capas_de_filmes/caminho_para_o_abismo.png",
+    alt: "Imagem do filme Caminho para o abismo",
+    title: "Caminho para o abismo",
+    category: "2D",
+    rating: "14 anos",
+    genre: "Horror",
+    duration: 103,
+  },
+  {
+    id: 5,
+    src: "/capas_de_filmes/desastres_do_escritorio.png",
+    alt: "Imagem do filme Desastres do Escritório",
+    title: "Desastres do Escritório",
+    category: "2D",
+    rating: "Livre",
+    genre: "Comédia",
+    duration: 85,
+  },
+  {
+    id: 6,
+    src: "/capas_de_filmes/mestres_do_futuro.png",
+    alt: "Imagem do filme Mestres do Futuro",
+    title: "Mestres do Futuro",
+    category: "2D",
+    rating: "Livre",
+    genre: "Documentário",
+    duration: 120,
+  },
+  {
+    id: 7,
+    src: "/capas_de_filmes/la_esperanza.png",
+    alt: "Imagem do filme La Esperanza",
+    title: "La Esperanza",
+    category: "2D",
+    rating: "12 anos",
+    genre: "Drama",
+    duration: 98,
+  },
+  {
+    id: 8,
+    src: "/capas_de_filmes/o_nexus_do_tempo.png",
+    alt: "Imagem do filme O nexus do tempo",
+    title: "O nexus do tempo",
+    category: "3D",
+    rating: "10 anos",
+    genre: "Ficcção Científica",
+    duration: 105,
+  },
+];
+
+const MovieSection = () => {
+  return (
+    <main>
+      <section className={styles.container}>
+        <Fieldset variant="secondary">
+          <InputText placeholder="Buscar filmes..." />
+          <Button variant="icon">
+            <FaSearch />
+          </Button>
+        </Fieldset>
+        <h1 className={styles.title}>Em cartaz</h1>
+        <MoviesList movies={movies} />
+      </section>
+    </main>
+  );
+};
+
+export default MovieSection;

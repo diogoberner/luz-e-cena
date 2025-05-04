@@ -2,10 +2,10 @@ export type Category = "2D" | "3D";
 
 export type Censorship =
   | "Livre"
-  | "10 Anos"
-  | "12 Anos"
-  | "14 Anos"
-  | "16 Anos";
+  | "10 anos"
+  | "12 anos"
+  | "14 anos"
+  | "16 anos";
 
 export interface Movie {
   id: number;
@@ -15,5 +15,5 @@ export interface Movie {
   genre: string;
   category: Category;
   duration: number;
-  censorship: Censorship;
+  rating: Censorship;
 }
