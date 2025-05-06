@@ -8,6 +8,7 @@ const useFilterMovies = (
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const filteredMovies: Movie[] = useMemo(() => {
+    if (!searchTerm.trim()) return movies;
     return movies.filter((movie) =>
       getValue(movie).toLowerCase().includes(searchTerm.toLowerCase())
     );
