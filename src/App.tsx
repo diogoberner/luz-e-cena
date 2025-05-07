@@ -11,6 +11,7 @@ function App() {
       <MovieSection />
       <Banner src="./banner_combo.png" alt="Banner do combo." />
       <Newsletter />
+      <Banner src="./tarjeta.png" alt="Tarjeta" />
     </>
   );
 }

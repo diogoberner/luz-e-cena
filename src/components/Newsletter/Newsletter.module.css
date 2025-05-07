@@ -1,22 +1,25 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.newsletter {
   background-color: var(--blue-light);
-  padding: 5rem;
+  padding: var(--padding-xxl) 0;
 }
 
-.input-wrapper {
+.form {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: var(--gap-s);
 }
 
 .title {
+  color: var(--black);
   font-family: var(--font-title);
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 120%;
+  font-size: var(--font-size-l);
+  text-align: center;
+  margin-bottom: var(--margin-l);
+}
+
+.error {
+  color: #e63946;
+  font-size: var(--font-size-s);
+  margin-top: var(--margin-s);
 }

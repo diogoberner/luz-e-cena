@@ -5,14 +5,16 @@ import InputText from "../InputText";
 
 const Newsletter = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.newsletter}>
       <h2 className={styles.title}>Inscreva-se para ganhar descontos!</h2>
-      <div className={styles["input-wrapper"]}>
-        <Fieldset variant="primary">
+      <form className={styles.form}>
+        <Fieldset>
           <InputText placeholder="Digite seu melhor email" />
         </Fieldset>
-        <Button variant="default">Inscrever</Button>
-      </div>
+        <Button variant="default" type="submit">
+          Inscrever
+        </Button>
+      </form>
     </section>
   );
 };
