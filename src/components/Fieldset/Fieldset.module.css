@@ -9,7 +9,7 @@
 
 .primary {
   border: 3px solid var(--gray-dark);
-  background-color: var(--gray-light);
+  background-color: var(--blue-light);
 }
 
 .secondary {
