@@ -1,18 +1,20 @@
 import { useMemo, useState } from "react";
 import { Movie } from "../types";
+import useDebounce from "./useDebounce";
 
 const useFilterMovies = (
   movies: Movie[],
   getValue: (movie: Movie) => string
 ) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
+  const { debouncedTerm } = useDebounce(searchTerm, 500);
 
   const filteredMovies: Movie[] = useMemo(() => {
-    if (!searchTerm.trim()) return movies;
+    if (!debouncedTerm.trim()) return movies;
     return movies.filter((movie) =>
-      getValue(movie).toLowerCase().includes(searchTerm.toLowerCase())
+      getValue(movie).toLowerCase().includes(debouncedTerm.toLowerCase())
     );
-  }, [movies, searchTerm, getValue]);
+  }, [movies, debouncedTerm, getValue]);
 
   return { searchTerm, setSearchTerm, filteredMovies };
 };
