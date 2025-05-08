@@ -41,6 +41,7 @@
 .anchor {
   color: var(--gray-light);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .anchor:hover {
@@ -57,6 +58,7 @@
 
 .icon {
   color: var(--blue);
+  cursor: pointer;
 }
 
 .developed {

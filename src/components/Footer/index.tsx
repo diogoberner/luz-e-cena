@@ -9,9 +9,11 @@ const Footer = () => {
     <>
       <footer className={styles.footer}>
         <FooterLogo />
-        <FooterInfo />
-        <FooterInstitucional />
-        <FooterSocial />
+        <div className={styles.footer_info}>
+          <FooterInfo />
+          <FooterInstitucional />
+          <FooterSocial />
+        </div>
       </footer>
       <div className={styles.developed}>
         Desenvolvido por Alura. Projeto fictício sem fins comerciais.
