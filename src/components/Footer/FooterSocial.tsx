@@ -8,13 +8,13 @@ const FooterSocial = () => {
     <div className={styles.social}>
       <h4 className={styles.title}>Siga nossas redes</h4>
       <div className={styles.icons}>
-        <Link>
+        <Link href="#">
           <FaWhatsapp className={styles.icon} />
         </Link>
-        <Link>
+        <Link href="#">
           <FaInstagram className={styles.icon} />
         </Link>
-        <Link>
+        <Link href="#">
           <AiFillTikTok className={styles.icon} />
         </Link>
       </div>

@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.footer}>
-        <FooterLogo />
         <div className={styles.footer_info}>
+          <FooterLogo />
           <FooterInfo />
           <FooterInstitucional />
           <FooterSocial />

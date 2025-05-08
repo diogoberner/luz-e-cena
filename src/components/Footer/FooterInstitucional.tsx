@@ -5,13 +5,13 @@ const FooterInstitucional = () => {
   return (
     <div className={styles.institutional}>
       <h4 className={styles.title}>Institucional</h4>
-      <Link>
+      <Link href="#">
         <span className={styles.anchor}>Sobre nós</span>
       </Link>
-      <Link>
+      <Link href="#">
         <span className={styles.anchor}>Para empresas</span>
       </Link>
-      <Link>
+      <Link href="#">
         <span className={styles.anchor}>Club fidelidade</span>
       </Link>
     </div>
